@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="descripcion"
+        content="Todas las ofertas en electrodomésticos, ingresá a shopElectro.com y llevate tranquilo lo que más deseas.">
+    <meta name=”robots” content=”noindex, follow”>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/SHOP ELECTRO LOGO.ico" type="image/x-icon">
+    <title>Empleados-Shop Electro</title>
+
+</head>
+
+<body>
+
+
+    <!-- Cabecera que contine mi titulo y logo-->
+    <header>
+        <a name="volverAlInicio"></a>
+        <h1>Sección de empleados</h1>
+
+    </header>
+
+    <!-- menu de navegacion de mis diferentes paginas -->
+    <nav>
+        <ul>
+            <li type="square"><a href="index.html"><i class="fa-solid fa-bars"></i>Inicio</a></li>
+            <li type="square"><a href="compras.html"><i class="fa-solid fa-store"></i>Compras</a></li>
+            <li type="square"><a href="empleados.html"><i class="fa-solid fa-person"></i>Empleados</a></li>
+            <li type="square"><a href="registro.html"><i class="fa-solid fa-address-card"></i>Registrarse</a></li>
+            <li type="square"><a href="conocenos.html"><i class="fa-solid fa-house"></i>Conocenos</a></li>
+        </ul>
+        <!-- campo de busqueda -->
+        <form action="#" method="get">
+            <label for="buscar">Campo de búsqueda:</label>
+            <input type="text" id="buscar" name="buscar" aria-label="Buscar" placeholder="Buscar">
+            <button type="submit" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <main>
+        <!--esta seccion contiene el formulario con diferentes campos para el empleado -->
+        <section aria-label="formulario y tabla de empleados">
+            <article>
+                <div>
+                    <form action="#" method="post">
+                        <h2>Ingrese los Datos a continuación</h2>
+                        <label for="nombre">Nombre:</label>
+                        <!-- pattern="[a-zA-Z]{3,30}( [a-zA-Z]+)*$" esto sirve para no aceptar muchos espacios entre nombres-->
+                        <!-- validaciones: required(obligatorio)-pattern(caracteres permitidos y cant. de caracteres,la barra con la s me toma los espacios)-autofocus(foco importancia) -->
+                        <input type="text" id="nombre" name="nombre" required
+                            pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$"
+                            placeholder="nombre" autofocus>
+                        <!--pattern="[a-zA-Z]{2,30}( [a-zA-Z]+)*$"  -->
+                        <br>
+                        <br>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required
+                            pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$"
+                            placeholder="apellido">
+                        <br><br>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" required placeholder="edad" min="18" max="99">
+                        <br><br>
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dni" name="dni" pattern="[0-9]{8,8}" placeholder="dni" required>
+                        <br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="correo@mail.com" required>
+                        <br><br>
+                        <label for="codPostal">Código postal:</label>
+                        <input type="text" id="codPostal" name="codPostal" required placeholder="código postal"
+                            pattern="[0-9]{2,4}">
+                        <br><br>
+                        <label for="numHijos">Ingresa el número de tus Hijos: <small>(En caso de no tener, ingresa un
+                                0.)</small></label>
+                        <input type="text" id="numHijos" name="numHijos" pattern="[0-9]{1,2}" placeholder="0" required>
+                        <br><br>
+                        <label for="colorFav">Color favorito:</label>
+                        <input type="color" id="colorFav" name="colorFav">
+                        <br><br>
+                        <label for="mesIngreso">Indica el mes de ingreso:</label>
+                        <input type="month" id="mesIngreso" name="mesIngreso">
+                        <br><br>
+                        <label for="horario">Indica el horario de ingreso al trabajo:</label>
+                        <input type="time" id="horarioLab" name="horarioLab">
+                        <br><br>
+                        <label for="turno">Elija el turno en cual se desempeña: </label>
+                        <br>
+                        <input type="radio" name="turno" id="maniana" value="maniana"><label
+                            for="maniana">Mañana</label>
+                        <input type="radio" name="turno" id="vespertino" value="vespertino"><label
+                            for="vespertino">Vespertino</label>
+                        <input type="radio" name="turno" id="noche" value="noche"><label for="noche">Noche</label>
+                        <br>
+                        <br>
+                        <label for="semana">Indica la semana de tus vacaciones:</label>
+                        <input type="week" id="semanaVacas" name="semanaVacas">
+                        <br><br>
+                        <label for="menu">Elige el menú de merienda:</label>
+                        <select name="merienda" id="merienda">
+                            <optgroup label="Caliente">
+                                <option value="cafe">Café con medialunas</option>
+                                <option value="capuchino">Capuchino con bizcochuelo</option>
+                                <option value="chocolata">Chocolatada con galletas</option>
+                            </optgroup>
+                            <optgroup label="frio">
+                                <option value="ensalda">Ensalada de frutas</option>
+                                <option value="torta">Torta de chocolate</option>
+                                <option value="jugo">Jugo de naranja con torta</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+                        <label for="imgPerfil">Selecciona una foto para subir a tu perfil:</label>
+                        <input type="file" id="imgPerfil" name="imgPerfil" required>
+                        <br><br>
+                        <label for="comentario">Envianos tu comentario:</label>
+                        <br>
+                        <textarea name="comentario" id="comentario" cols="50" rows="10"
+                            placeholder="Escriba aquí sus observaciones.."></textarea>
+                        <br>
+                        <input type="submit" value="Enviar">
+
+                    </form>
+                </div>
+            </article>
+            <br><br>
+            <article>
+                <!-- tabla con datos de empleados -->
+                <table>
+                    <caption>Datos de Empleados</caption>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Área</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan</td>
+                            <td>perez</td>
+                            <td>Capital Humano</td>
+                        </tr>
+                        <tr>
+                            <td>Melina</td>
+                            <td>Sanchez</td>
+                            <td>Analista funcional</td>
+                        </tr>
+                        <tr>
+                            <td>José</td>
+                            <td>Avila</td>
+                            <td>Tester QA</td>
+                        </tr>
+                        <tr>
+                            <td>Samantha</td>
+                            <td>Lopez</td>
+                            <td>Programadora web</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </article>
+            <div>
+                 <!-- este hipervinculo me lleva a la parte de arriba dentro de mi misma pagina -->
+                <br>
+                <a href="#volverAlInicio"><i class="fa-solid fa-angles-up"></i>Volver al Inicio</a>
+            </div>
+           
+        </section>
+    </main>
+
+    <!-- pie de pagina con links a redes sociales -->
+    <footer>
+        <ul>
+            <p>Copyright &copy 2022</p>
+            <h4>Redes sociales</h4>
+            <li type="circle"><a href="https://www.facebook.com/arbustait/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-facebook"></i>facebook</a>
+            </li>
+            <li type="circle"><a href="https://twitter.com/arbustaIT" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-twitter"></i>twitter</a></li>
+            <li type="circle"><a href="https://www.instagram.com/arbustait/" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-instagram-square"></i>instagram</a>
+            </li>
+            <li type="circle"><a href="https://www.linkedin.com/company/arbusta/" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>linkedin</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

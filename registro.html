@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="descripcion"
+        content="Todas las ofertas en electrodomésticos, ingresá a shopElectro.com y llevate tranquilo lo que más deseas.">
+    <meta name=”robots” content=”noindex, follow”>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/SHOP ELECTRO LOGO.ico" type="image/x-icon">
+    <title>Registro-Shop Electro</title>
+</head>
+
+<body>
+
+
+    <!-- Cabecera que contine mi titulo -->
+    <header>
+        <a name="volverAlInicio"></a>
+        <h1>Registro de nuevo usuario</h1>
+    </header>
+
+    <!-- menu de navegacion de mis diferentes paginas -->
+    <nav>
+        <ul>
+            <li type="square"><a href="index.html"><i class="fa-solid fa-bars"></i>Inicio</a></li>
+            <li type="square"><a href="compras.html"><i class="fa-solid fa-store"></i>Compras</a></li>
+            <li type="square"><a href="empleados.html"><i class="fa-solid fa-person"></i>Empleados</a></li>
+            <li type="square"><a href="registro.html"><i class="fa-solid fa-address-card"></i>Registrarse</a></li>
+            <li type="square"><a href="conocenos.html"><i class="fa-solid fa-house"></i>Conocenos</a></li>
+        </ul>
+        <!-- campo de busqueda -->
+        <form action="#" method="get">
+            <label for="buscar">Campo de búsqueda:</label>
+            <input type="text" id="buscar" name="buscar" aria-label="Buscar" placeholder="Buscar">
+            <button type="submit" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main>
+        <!-- section- contenido principal -->
+        <section aria-label="formulario de registro">
+            <article>
+                <nav>
+                    <p><b>En esta sección se va a poder registrar, le pedimos que por favor verifique bien sus datos
+                            personales antes de enviarlos.</b> </p>
+                </nav>
+            </article>
+            <article>
+                <!-- form requiriendo datos para registrar un empleado -->
+                <form action="#" method="post">
+                    <label for="name">Tu/s Nombre/s:</label>
+                    <input type="text" id="name" name="name" required autofocus
+                        pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$" placeholder="nombre">
+                    <br><br>
+                    <label for="lastName">Apellido/s</label>
+                    <input type="text" id="lastName" name="lastName"
+                        pattern="[a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]{2,30}( [a-zA-Z´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$" placeholder="apellido"
+                        required>
+                    <br><br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required placeholder="edad" min="18" maxlength="99">
+                    <br><br>
+                    <label for="dateBirth">Fecha de Nac:</label>
+                    <input type="date" id="dateBirth" name="dateBirth" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="correo@mail.com" required>
+                    <br><br>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" required  placeholder="*********"  pattern="[a-zA-Z0-9´áéíóúñüàèÁÉÍÓÚÑÜ]{8,30}( [a-zA-Z0-9´áéíóúñüàèÁÉÍÓÚÑÜ]+)*$">
+                    <br><br>
+                    <label for="phone">Teléfono <small>(agregue característica sin espacios):</small></label>
+                    <input type="text" id="phone" name="phone" pattern="[0-9]{10,14}" placeholder="teléfono">
+                    <br><br>
+                    <label for="genero">Género:</label>
+                    <br>
+                    <input type="radio" name="genero" id="hombre" value="hombre"><label for="hombre">Hombre</label>
+                    <input type="radio" name="genero" id="mujer" value="mujer"><label for="mujer">Mujer</label>
+                    <input type="radio" name="genero" id="otro" value="otro"><label for="otro">Otro</label>
+                    <br><br>
+                    <label for="imgPerfil">Selecciona una foto para subir a tu perfil:</label>
+                    <input type="file" id="imgPerfil" name="imgPerfil" required>
+                    <br><br>
+
+                    <input type="submit" value="Registrarte">
+                </form>
+            </article>
+            <div  ><!-- este hipervinculo me lleva a la parte de arriba dentro de mi misma pagina -->
+                <br>
+                <a href="#volverAlInicio"><i class="fa-solid fa-angles-up"></i>Volver al Inicio</a>
+               
+            </div>
+
+        </section>
+    </main>
+
+    <!-- pie de pagina con links a redes sociales -->
+    <footer>
+        <ul>
+            <p>Copyright &copy 2022</p>
+            <h4>Redes sociales</h4>
+            <li type="circle"><a href="https://www.facebook.com/arbustait/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-facebook"></i>facebook</a>
+            </li>
+            <li type="circle"><a href="https://twitter.com/arbustaIT" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-twitter"></i>twitter</a></li>
+            <li type="circle"><a href="https://www.instagram.com/arbustait/" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-instagram-square"></i>instagram</a>
+            </li>
+            <li type="circle"><a href="https://www.linkedin.com/company/arbusta/" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>linkedin</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

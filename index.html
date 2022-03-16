@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion"
+        content="Todas las ofertas en electrodomésticos, ingresá a shopElectro.com y llevate tranquilo lo que más deseas.">
+    <!-- puse la descripcion para que la en las busquedas de google se posicione mejor(SEO) -->
+    <meta name=”robots” content=”noindex, follow”>
+    <!--meta etiquetas son muy útiles para evitar que Google indexe páginas que no te interesen, pero que siga los enlaces para que continúe rastreando nuestra web-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/SHOP ELECTRO LOGO.ico" type="image/x-icon">
+
+    <title>Shop Electro</title>
+</head>
+
+<body>
+
+
+    <!-- Cabecera que contine mi titulo -->
+    <header>
+        <a name="volverAlInicio"></a>
+        <h1><img src="/img/SHOP ELECTRO LOGO.ico" alt="logoShop"> Shop Electro</h1>
+    </header>
+
+    <!-- menu de navegacion de mis diferentes paginas -->
+    <nav>
+        <ul>
+            <li type="square"><a href="index.html"><i class="fa-solid fa-bars"></i>Inicio</a></li>
+            <li type="square"><a href="compras.html"><i class="fa-solid fa-store"></i>Compras</a></li>
+            <li type="square"><a href="empleados.html"><i class="fa-solid fa-person"></i>Empleados</a></li>
+            <li type="square"><a href="registro.html"><i class="fa-solid fa-address-card"></i>Registrarse</a></li>
+            <li type="square"><a href="conocenos.html"><i class="fa-solid fa-house"></i>Conocenos</a></li>
+
+        </ul>
+        <!-- campo de busqueda -->
+        <form action="#" method="get">
+            <label for="buscar">Campo de búsqueda:</label>
+            <input type="text" id="buscar" name="buscar" aria-label="Buscar" placeholder="Buscar">
+            <button type="submit" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main>
+        <!-- seccion con diferentes articulos, que explica la empresa, contiene img y seccion que me lleva a compras -->
+        <section aria-label="texto-imagenes-video relacionado a electrodomesticos">
+            <article>
+                <p><strong> Shop Electro</strong> es una tienda virtual de electrodomésticos donde vas a poder realizar
+                    tus compras con total
+                    <em>confianza</em>, contamos con garantía en todos nuestros productos. <br> Son de calidad y
+                    nuestros clientes nos avalan.
+                    Ponete en contacto con nosotros sin ningún compromiso, te estaremos <mark>atendiendo </mark> a la
+                    brevedad.
+                </p>
+            </article>
+            <article>
+                <!-- seccion con imagenes y te lleva a la pagina de compras -->
+                <h3>En esta sección vas a poder comprar</h3>
+                <a href="compras.html">Compras</a>
+            </article>
+            <br>
+            <br>
+            <article>
+                <!-- imagenes -->
+                <img src="/img/tv.jpg" alt="Smart tv" title="Smart tv" >
+                <img src="https://www.cetrogar.com.ar/media/catalog/product/l/b/lb3111-1.jpg?width=500&height=500&canvas=500:500&quality=80&bg-color=255,255,255&fit=bounds"
+                    alt="Heladera" title="Heladera">
+            </article>
+            <article>
+                <!-- video -->
+                <h3>Mira nuestro video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7RTW4Nbao1c"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+        </section>
+        <!-- parte que contine paginas relacionadas al negocio -->
+        <aside>
+            <h3>Sitios relacionados</h3>
+            <ol>
+                <li><a href="https://www.fravega.com/" target="_blank" rel="noopener noreferrer">fravega</a></li>
+                <li><a href="https://www.garbarino.com/" target="_blank" rel="noopener noreferrer">garbarino</a></li>
+                <li><a href="https://www.musimundo.com/" target="_blank" rel="noopener noreferrer">musimundo</a></li>
+                <li><a href="https://www.mercadolibre.com.ar/#from=homecom" target="_blank"
+                        rel="noopener noreferrer">mercadolibre</a></li>
+            </ol>
+            <!-- este hipervinculo me lleva a la parte de arriba dentro de mi misma pagina -->
+            <br>
+            <a href="#volverAlInicio"><i class="fa-solid fa-angles-up"></i>Volver al Inicio</a>
+        </aside>
+        <!-- Fin inicio del contenido principal -->
+    </main>
+
+    <!-- pie de pagina con links a redes sociales -->
+    <footer>
+        <ul>
+            <p>Copyright &copy 2022</p>
+            <h4>Redes sociales</h4>
+            <li type="circle"><a href="https://www.facebook.com/arbustait/" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-facebook"></i>facebook</a>
+            </li>
+            <li type="circle"><a href="https://twitter.com/arbustaIT" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-twitter"></i>twitter</a></li>
+            <li type="circle"><a href="https://www.instagram.com/arbustait/" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-instagram-square"></i>instagram</a>
+            </li>
+            <li type="circle"><a href="https://www.linkedin.com/company/arbusta/" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>linkedin</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
